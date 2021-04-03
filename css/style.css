@@ -1,0 +1,442 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+h2 {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+h3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;    
+}
+h4 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;    
+}
+h5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;        
+}
+#navigation {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #072448;
+    height: 80px;
+    border-bottom: 2px solid #54D2D2;
+    position: fixed;
+    top: 0;
+    z-index: 60;
+}
+#navMenu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-right: 70px;
+}
+.navLinks {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    color: #579AEF;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin: 16px;
+    padding: 8px;
+}
+a.navLinks:hover {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    background: #C7DDFA;
+    border-radius: 8px;
+    color: #125CB8;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin: 16px;
+    padding: 8px;
+}
+#navMenu p a {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+#navigation img {
+    display: flex;
+    align-items: flex-start;
+    width: 183px;
+    height: 48px;
+    margin-left: 70px;
+}
+.heroImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 108px auto;
+}
+.content {
+    margin: 0px 70px;
+    display: flex;
+    width: 100%;
+}
+.aboutMePhoto {
+    display: flex;
+    align-items: center;
+    z-index: 6;
+}
+.aboutMePhoto img {
+    width: 100%;
+}
+.aboutCard {
+    width: 100%;
+    background: #ECF3FB;
+    border-radius: 10px;
+    padding: 48px 18px 48px 85px;
+    margin-left: -85px;
+}
+.aboutCard h2 {
+    color: #072448;
+    margin: 0;
+}
+.aboutCard p {
+    margin: 24px auto;
+    color: #072448;
+}
+button {
+    width: 222px;
+    height: 48px;
+    background: #54D2D2;
+    box-shadow: 0px 6px 14px rgba(7, 36, 72, 0.3);
+    border-radius: 10px;
+    border: 1px solid #54D2D2;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #072448;
+}
+button a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #072448;
+}
+button:hover {
+    border: 1px solid #1F7274;
+    background-color: #1F7274;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DDF6F6;
+}
+button:hover a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DDF6F6;
+}
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #072448;
+    height: 80px;
+    border-top: 2px solid #54D2D2;
+}
+#footerMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 70px;
+}
+#footerMenu p {
+    color: #579AEF;
+    margin: 8px;
+    text-align: center;
+}
+#topArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(84, 210, 210);
+    background: rgba(84, 210, 210, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#topArrow img {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: center;
+    top: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#topArrow:hover {
+    background: rgba(34, 114, 116, 0.9);
+}
+#return-to-top:hover img {
+    color: #fff;
+    top: 5px;
+}
+#mySkills {
+    margin: 108px auto;
+    padding: 0px 5%;
+    color: #0C4080;
+    background-color: #F7F9F9;
+}
+#myWork {
+    margin: 108px auto;
+    color: #0C4080;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+.flexContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    text-align: left;
+    width: 33%;
+    background-color: #ECF3FB;
+    border-radius: 10px;
+    box-shadow: 0px 6px 24px rgba(7, 36, 72, 0.15);
+    margin: 24px;
+    color: #0C4080;
+}
+.flexContainer div img {
+    margin-top: -48px;
+    height: 180px;
+    width: -webkit-fill-available;
+}
+.flexContainer div p {
+    display: flex;
+    align-content: flex-start;
+    text-align: left;
+    padding: 0px 32px;
+}
+.flexContainer h3 {
+    margin: 24px 0px;
+    padding: 0px 32px;
+}
+.workGrid {
+    margin: 24px 5%;
+    color: #0C4080;
+    display: grid;
+    gap: 24px;
+    grid-template-rows: 328px 328px 328px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "proj1Image proj1"
+    "proj2Image proj2"
+    "proj3Image proj3";
+}
+.workGrid h4 {
+    margin: 0px auto;
+}
+.workGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.workGrid p {
+    margin-bottom: 48px;
+}
+.proj1Image {
+    grid-area: proj1Image;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.proj1 {
+    grid-area: proj1;
+    background-color: #ECF3FB;
+    border-radius: 10px;
+    text-align: left;
+    padding: 16px;
+}
+.proj2Image {
+    grid-area: proj2Image;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.proj2 {
+    grid-area: proj2;
+    background: #ECF3FB;
+    border-radius: 10px;
+    text-align: left;
+    padding: 16px;
+}
+.proj3Image {
+    grid-area: proj3Image;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.proj3 {
+    grid-area: proj3;
+    background: #ECF3FB;
+    border-radius: 10px;
+    text-align: left;
+    padding: 16px;
+}
+#myWork h5 {
+    text-align: center;
+    margin-top: 24px auto;
+    padding: 16px;
+    background-color: #ECF3FB;
+}
+#myWork h1 {
+    margin: 48px 5%;
+}
+@media only screen and (max-width: 600px) {
+.workGrid {
+    display: grid;
+    margin: 24px 5%;
+    width: fit-content;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: 300px 1fr 300px 1fr 300px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "proj1Image"
+    "proj1"
+    "proj2Image"
+    "proj2"
+    "proj3Image"
+    "proj3"
+    ;
+}
+.proj1Image {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.proj2Image {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.proj3Image {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#mySkills {
+    width: 100%;
+    flex-direction: column;
+    margin: 24px 5%;
+}
+.flexContainer {
+    flex-direction: column;
+    width: 100%;
+    margin: 24px 5%;
+}
+.flexContainer div {
+    width: 50%;
+    flex-direction: column;
+    margin: 24px 5%;
+}
+.workGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.heroImg {
+    display: flex;
+    margin: 24px 5%;
+    flex-direction: column;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 24px 5%;
+}
+.aboutMePhoto {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+}
+.aboutCard {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background: #ECF3FB;
+    border-radius: 10px;
+    padding: 16px 8px 8px 8px;
+    margin: -8px 5% 0px 5%;
+}
+#navigation {
+    flex-direction: column;
+    margin: 0px;
+    height: fit-content;
+}
+#navMenu {
+    margin: 16px auto;
+}
+}
