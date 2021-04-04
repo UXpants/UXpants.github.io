@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.02em;
+    margin: 0;
 }
 h1 {
     font-style: normal;
@@ -43,13 +44,12 @@ h5 {
 #navigation {
     display: flex;
     width: 100%;
-    margin: 0px auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background: #072448;
     height: 80px;
-    border-bottom: 2px solid #54D2D2;
+    border-bottom: 3px solid #54D2D2;
     position: fixed;
     top: 0;
     z-index: 60;
@@ -124,12 +124,12 @@ a.navLinks:hover {
     margin-left: -85px;
 }
 .aboutCard h2 {
-    color: #072448;
+    color: #0C4080;
     margin: 0;
 }
 .aboutCard p {
     margin: 24px auto;
-    color: #072448;
+    color: #0C4080;
 }
 button {
     width: 222px;
@@ -174,27 +174,44 @@ button:hover a {
     text-decoration: none;
     color: #DDF6F6;
 }
-footer {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+#navigation2 {
+    display: block;
     background: #072448;
-    height: 80px;
-    border-top: 2px solid #54D2D2;
+    border-top: 3px solid #54D2D2;
 }
 #footerMenu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-items: center;
-    margin-left: 70px;
+    justify-content: flex-start;
+    height: 80px;
+    padding-left: 70px;
 }
 #footerMenu p {
     color: #579AEF;
-    margin: 8px;
     text-align: center;
+}
+#footerMenu img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    width: 50px;
+    height: 50px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 240px;
+    background-color: #F7F9F9;
+    border-radius: 0px 10px 10px 0px;
+}
+.contact img {
+    margin: 16px;
+    width: 32px;
+    height: 32px;
 }
 #topArrow {
     position: fixed;
@@ -232,19 +249,21 @@ footer {
 }
 #topArrow:hover {
     background: rgba(34, 114, 116, 0.9);
-}
-#return-to-top:hover img {
-    color: #fff;
     top: 5px;
 }
 #mySkills {
-    margin: 108px auto;
-    padding: 0px 5%;
+    margin: 56px auto;
+    padding-top: 32px;
+    padding-left: 70px;
+    padding-right: 70px;
     color: #0C4080;
     background-color: #F7F9F9;
 }
 #myWork {
-    margin: 108px auto;
+    margin: 56px auto;
+    padding-top: 32px;
+    padding-left: 70px;
+    padding-right: 70px;
     color: #0C4080;
 }
 .flexContainer {
@@ -280,19 +299,18 @@ footer {
     padding: 0px 32px;
 }
 .workGrid {
-    margin: 24px 5%;
     color: #0C4080;
     display: grid;
     gap: 24px;
     grid-template-rows: 328px 328px 328px;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 328px 1fr;
     grid-template-areas: 
     "proj1Image proj1"
     "proj2Image proj2"
     "proj3Image proj3";
 }
 .workGrid h4 {
-    margin: 0px auto;
+    margin: 0;
 }
 .workGrid img {
     width: 100%;
@@ -342,12 +360,9 @@ footer {
 }
 #myWork h5 {
     text-align: center;
-    margin-top: 24px auto;
+    margin-top: 8px auto;
     padding: 16px;
     background-color: #ECF3FB;
-}
-#myWork h1 {
-    margin: 48px 5%;
 }
 @media only screen and (max-width: 600px) {
 .workGrid {
@@ -438,5 +453,8 @@ footer {
 }
 #navMenu {
     margin: 16px auto;
+}
+#footer {
+    width: 100%;
 }
 }
